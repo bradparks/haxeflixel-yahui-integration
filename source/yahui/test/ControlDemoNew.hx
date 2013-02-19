@@ -387,7 +387,7 @@ class ControlDemoNew extends Component {
 		hbox.percentWidth = 100;
 		hbox.percentHeight = 100;
 		
-		var listCount = 2;
+		var listCount = 1;
 		for (n in 0...listCount) {
 			var list:ListView = new ListView();
 			list.percentWidth = Std.int(100 / listCount);
