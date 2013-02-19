@@ -188,6 +188,8 @@ class PlayState extends FlxState
 	
 	private function updatePlayer():Void
 	{
+    FlxG.mouse.show();
+
 		wrap(player);
 		
 		//MOVEMENT
