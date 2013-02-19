@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<app title="TileMap Demo" file="TileMapDemo" main="Main" version="0.0.1" company="Zaphod" />
+	
+	<window width="800" height="600" fps="30" background="0x000000" orientation="portrait" resizable="true" if="flash" />
+	<window width="800" height="600" fps="30" background="0x000000" orientation="landscape" hardware="true" unless="flash" />
+ 	
+	<classpath name="source" />
+	
+	<haxelib name="nme" />
+	<haxelib name="flixel" />
+	
+	<assets path="assets" if="android" >
+		<sound path="data/beep.wav" id="Beep" />
+	</assets>
+	
+	<assets path="assets" if="desktop" >
+		<sound path="data/beep.wav" id="Beep" />
+	</assets>
+	
+	<assets path="assets" if="flash" >
+		<sound path="data/beep.mp3" id="Beep" />
+	</assets>
+	
+	<assets path="assets" exclude="*.wav" if="flash" />
+	<assets path="assets" unless="flash" />
+	
+	<icon name="assets/HaxeFlixel.svg" />
+
+	<!-- YAHUI -->
+	<icon path="assets/nme.svg" />
+	<icon path="assets/icons/application_16.png" width="16" height="16"/>
+	<icon path="assets/icons/application_24.png" width="24" height="24"/>
+	<icon path="assets/icons/application_32.png" width="32" height="32"/>
+	<icon path="assets/icons/application_48.png" width="48" height="48"/>
+	
+	<assets path="assets/img" rename="img" />
+	<assets path="assets/skins" rename="skins" exclude="*.xml" if="html5" />
+	<assets path="assets/skins" rename="skins" unless="html5" />
+	<assets path="assets/icons" rename="icons" />
+
+	<assets path="assets/ui" rename="ui" exclude="*.xml" if="html5" />
+	<assets path="assets/ui" rename="ui" unless="html5" />
+
+	<!-- for skin sounds -->
+	<assets path="assets/skins/android/audio" rename="assets/skins/android/audio" type="sound" include="*"/>	
+</project>
