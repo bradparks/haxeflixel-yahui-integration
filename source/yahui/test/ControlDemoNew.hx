@@ -39,8 +39,9 @@ class ControlDemoNew extends Component {
 		tabView.addPage("List", createPage_LIST(), "favIcon");
 		tabView.addPage("Selection", createPage_SELECTION(), "favIcon");
 		tabView.addPage("Basic", createPage_BASIC(), "favIcon");
-		tabView.addPage("Scrolls", createPage_SCROLLS(), "favIcon");
 		tabView.addPage("Styles", createPage_THEME(), "favIcon");
+		tabView.addPage("Scrolls", createPage_SCROLLS(), "favIcon");
+    /*
 		tabView.addPage("Page 4", null, "favIcon");
 		tabView.addPage("Page 5", null, "favIcon");
 		tabView.addPage("Page 6", null, "favIcon");
@@ -48,6 +49,7 @@ class ControlDemoNew extends Component {
 		tabView.addPage("Page 8", null, "favIcon");
 		tabView.addPage("Page 9", null, "favIcon");
 		tabView.addPage("Page0", null, "favIcon");
+    */
 		
 		addChild(tabView);
 		
