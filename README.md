@@ -1,10 +1,14 @@
-haxeflixel-yahui-integration
-============================
-
 Test of integrating HaxeFlixel and YAHUI
 
-run using:
+- https://github.com/Beeblerox/HaxeFlixel
 
-nme test flash
-nme test neko
-nme test cpp
+- https://github.com/ianharrigan/YAHUI
+
+
+Run using:
+
+- nme test flash
+
+- nme test neko
+
+- nme test cpp
