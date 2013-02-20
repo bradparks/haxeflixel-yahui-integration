@@ -33,6 +33,7 @@ class ControlDemoNew extends Component {
 		super.initialize();
 	
     nme.ui.Mouse.show();
+
 		tabView = new TabView();
 		tabView.percentWidth = 100;
 		tabView.percentHeight = 100;
@@ -42,6 +43,7 @@ class ControlDemoNew extends Component {
 		tabView.addPage("Basic", createPage_BASIC(), "favIcon");
 		tabView.addPage("Styles", createPage_THEME(), "favIcon");
 		tabView.addPage("Scrolls", createPage_SCROLLS(), "favIcon");
+
     /*
 		tabView.addPage("Page 4", null, "favIcon");
 		tabView.addPage("Page 5", null, "favIcon");

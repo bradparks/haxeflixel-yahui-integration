@@ -43,7 +43,6 @@ class PlayState extends FlxState
 	
 	override public function create():Void
 	{
-    FlxG.mouse.show();
 		FlxG.framerate = 50;
 		FlxG.flashFramerate = 50;
 		
@@ -189,6 +188,7 @@ class PlayState extends FlxState
 	private function updatePlayer():Void
 	{
     FlxG.mouse.show();
+    nme.ui.Mouse.show();
 
 		wrap(player);
 		
