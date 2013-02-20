@@ -1,0 +1,13 @@
+-main ApplicationMain 
+-lib nme
+-lib flixel
+-cp source
+-cp /usr/lib/haxe/lib/nme/3,5,5/
+-D nme_install_tool
+-D mac
+-D desktop
+-cp bin/mac/neko/haxe
+-neko bin/mac/neko/obj/ApplicationMain.n
+--remap flash:nme
+--remap browser:native
+-debug

@@ -32,6 +32,7 @@ class ControlDemoNew extends Component {
 	public override function initialize():Void {
 		super.initialize();
 	
+    nme.ui.Mouse.show();
 		tabView = new TabView();
 		tabView.percentWidth = 100;
 		tabView.percentHeight = 100;

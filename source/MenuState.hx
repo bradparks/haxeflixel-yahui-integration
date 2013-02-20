@@ -24,8 +24,6 @@ class MenuState extends FlxState
 		t.size = 16;
 		t.alignment = "center";
 		add(t);
-		
-		FlxG.mouse.show();
 	}
 
 	override public function update():Void

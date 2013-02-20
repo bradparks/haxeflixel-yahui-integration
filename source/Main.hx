@@ -42,6 +42,7 @@ class Main extends Sprite {
 	
 	public function new() {
 		super();
+
 		#if iphone
 			Lib.current.stage.addEventListener(Event.RESIZE, initialize);
 		#else
@@ -56,6 +57,8 @@ class Main extends Sprite {
 			removeEventListener(Event.ADDED_TO_STAGE, initialize);
 		#end
 		
+    nme.ui.Mouse.show();
+
 		startApp(WINDOWS_SKIN);
 	}
 
@@ -101,7 +104,6 @@ class Main extends Sprite {
 		stage.addChild(background);
     */
     stage.addChild(new TileMapDemo());
-    FlxG.mouse.show();
 		
 		var root:Root = Root.createRoot( { x:400, y:0, width: 400, height: 600, additionalStyles: "Root.popupBorder", useShadow: false } );
 		
