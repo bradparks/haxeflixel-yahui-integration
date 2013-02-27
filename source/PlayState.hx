@@ -135,6 +135,10 @@ class PlayState extends FlxState
 	
 	override public function update():Void
 	{
+    FlxG.mouse.useSystemCursor = true;
+    FlxG.mouse.show();
+    FlxG.mouse.useSystemCursor = true;
+
 		// Tilemaps can be collided just like any other FlxObject, and flixel
 		// automatically collides each individual tile with the object.
 		FlxG.collide(player, collisionMap);
@@ -187,9 +191,6 @@ class PlayState extends FlxState
 	
 	private function updatePlayer():Void
 	{
-    FlxG.mouse.show();
-    nme.ui.Mouse.show();
-
 		wrap(player);
 		
 		//MOVEMENT

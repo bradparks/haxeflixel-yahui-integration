@@ -11,3 +11,9 @@
 *.lai
 *.la
 *.a
+
+bin/cpp/
+bin/mac/
+bin/neko/
+
+.DS_Store

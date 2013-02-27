@@ -1,7 +1,6 @@
 ﻿package;
 
 import yahui.test.ControlDemoNew;
-import org.flixel.FlxG;
 import nme.Assets;
 import nme.display.Bitmap;
 import nme.display.Sprite;
@@ -57,8 +56,6 @@ class Main extends Sprite {
 			removeEventListener(Event.ADDED_TO_STAGE, initialize);
 		#end
 		
-    nme.ui.Mouse.show();
-
 		startApp(WINDOWS_SKIN);
 	}
 
@@ -92,7 +89,8 @@ class Main extends Sprite {
 		});
 
 		var stage = Lib.current.stage;
-		stage.scaleMode = nme.display.StageScaleMode.NO_SCALE;
+		//stage.scaleMode = nme.display.StageScaleMode.NO_SCALE;
+		stage.scaleMode = nme.display.StageScaleMode.SHOW_ALL;
 		stage.align = nme.display.StageAlign.TOP_LEFT;
 
 		Root.destroyAll();

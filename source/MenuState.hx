@@ -30,6 +30,10 @@ class MenuState extends FlxState
 	{
 		super.update();
 
+    FlxG.mouse.useSystemCursor = true;
+    FlxG.mouse.show();
+    FlxG.mouse.useSystemCursor = true;
+
 		if (FlxG.mouse.justPressed())
 		{
 			FlxG.switchState(new PlayState());
